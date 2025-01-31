@@ -1,0 +1,231 @@
+@import 'vars';
+@import 'display';
+header{
+    padding:20px 7%;
+    @extend %dfb;
+    
+}
+section{
+    padding:70px 7%;
+}
+.div-logo{
+    width:30%;
+}
+.logo span{
+    color:$secondcolor;
+
+}
+ul{
+    @extend %df;
+    width:40%;
+    & li{
+        list-style: none;
+        padding:0 30px;
+        & a{
+            text-decoration: none;
+            color:$graycolor;
+            font-size:14px;
+            transition: .3s;
+            &:hover{
+                padding:10px;
+                @extend %bk;
+            }
+        }
+    }
+}
+.btn-header{
+    width:30%;
+    @extend %dfe;
+}
+.btn{
+    @extend %bk;
+    padding:15px 25px;
+    transition: .4s;
+    &:hover{
+        transform: rotate(10deg);
+    }
+    & span{
+        font-weight: bold;
+        font-size: 14px;
+        margin-left:5px;
+    }
+    
+}
+.home-section{
+    @extend %df;
+    width:100%;
+    & .left{
+        height:500px;
+            width:600px;
+        position: relative;
+        & img{
+           
+            border:1rem solid $primarycolor;
+            border-radius: 2rem;
+            box-shadow: 5px 5px 30px rgb(0,0,0,0.1);
+            object-fit: cover;
+            position: absolute;
+           
+        }
+        & .left-image1{
+            width:400px;
+            height:500px;
+            transition:0.2s;
+            &:hover{
+                transform:scale(1.1) rotate(10deg);
+            }
+        }
+        & .left-image2{
+            width:350px;
+            height:350px;
+            transition: 0.2s;
+            
+            top:150px;
+            left:250px;
+            
+            &:hover{
+                transform:scale(1.1) rotate(-10deg);
+            }
+        }
+    }
+}
+
+.right{
+    width:30%;
+    margin-left:100px;
+    @extend %dfc;
+    & p{
+        color:$secondcolor;
+        font-weight: bold;
+    }
+    & h1{
+        line-height:50px;
+        font-size:30px;
+        margin-top:20px;
+    }
+    & .title{
+        color:$graycolor;
+        font-size:14px;
+        width:70%;
+        margin-top:15px;
+    }
+   
+}
+.buttons{
+    @extend %dfa;
+    column-gap: 5px;
+    margin-top:20px;
+}
+.see-vd{
+    @extend %dd;
+    border:0;
+    background: $primarycolor;
+    & .bg-vd{
+        background-image: url('image/img3.jpg');
+        background-size: cover;
+        width:50px;
+        height:50px;
+        border-radius: 50%;
+        margin-right:15px;
+        position: relative;
+    }
+    & .play-vd{
+        position: absolute;
+        background-color: $primarycolor;
+        width:25px;
+        height:25px;
+        border-radius: 50%;
+        right:-20px;
+        transform: translate(-20%,50%);
+      
+        & i{
+            position: absolute;
+            top:5px;
+            left:8px;
+            color:red;
+        }
+    }
+
+    & span{
+    font-weight: bold;
+    font-size:14px;
+   
+    }
+}
+.desc-button{
+    @extend %dfb;
+    & .title{
+        color:$graycolor;
+        font-size:15px;
+    }
+    & .ch-button button{
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background: $secondcolor;
+        border:2px solid $secondcolor;
+        color:black;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background:$primarycolor;
+        }
+    }
+    & .second{
+        margin-left:10px;
+    }
+
+}
+.destinations .title{
+    color:$graycolor;
+    font-size: 14px;  
+    width:60%;
+}
+
+
+.destinations .gallerie .images{
+    width:24%;
+    height:350px;
+    border-radius:1rem;
+    box-shadow:5px 5px 30px rgb(0,0,0,0.1);
+    position: relative;
+    padding: 20px;
+    background-color: $primarycolor;
+    overflow: hidden;
+    cursor:pointer;
+    top:25px;
+    & img{
+        object-fit: cover;
+        height:100%;
+        width:100%;
+        border-radius: 1rem;
+        transition:0.5s;
+
+    }
+    
+}
+.destinations .gallerie{
+    @extend %d;
+    & .small-desc{
+        transform: translateY(350px);
+        background:$primarycolor;
+        padding:20px;
+        text-align:center;
+        transition:0.5s;
+        & h1{
+            font-size: 20px;
+            margin-bottom:10px;
+        }
+        & p{
+            font-size: 14px;
+            color:$graycolor;
+        }
+    }
+    & .images:hover .small-desc{
+        transform:translateY(-120px);
+    }
+    & .images:hover img{
+        transform: translateY(-120px);
+    }
+
+}

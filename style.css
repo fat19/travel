@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.btn, ul li a:hover {
+  background: #FFDE21;
+  border: #FFDE21;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.home-section, ul {
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+.desc-button, header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.destinations .gallerie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-vd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  padding: 20px 7%;
+}
+
+section {
+  padding: 70px 7%;
+}
+
+.div-logo {
+  width: 30%;
+}
+
+.logo span {
+  color: #FFDE21;
+}
+
+ul {
+  width: 40%;
+}
+ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgba(172, 166, 166, 0.6);
+  font-size: 14px;
+  transition: 0.3s;
+}
+ul li a:hover {
+  padding: 10px;
+}
+
+.btn-header {
+  width: 30%;
+}
+
+.btn {
+  padding: 15px 25px;
+  transition: 0.4s;
+}
+.btn:hover {
+  transform: rotate(10deg);
+}
+.btn span {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.home-section {
+  width: 100%;
+}
+.home-section .left {
+  height: 500px;
+  width: 600px;
+  position: relative;
+}
+.home-section .left img {
+  border: 1rem solid #fff;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.home-section .left .left-image1 {
+  width: 400px;
+  height: 500px;
+  transition: 0.2s;
+}
+.home-section .left .left-image1:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+.home-section .left .left-image2 {
+  width: 350px;
+  height: 350px;
+  transition: 0.2s;
+  top: 150px;
+  left: 250px;
+}
+.home-section .left .left-image2:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+.right {
+  width: 30%;
+  margin-left: 100px;
+}
+.right p {
+  color: #FFDE21;
+  font-weight: bold;
+}
+.right h1 {
+  line-height: 50px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.right .title {
+  color: rgba(172, 166, 166, 0.6);
+  font-size: 14px;
+  width: 70%;
+  margin-top: 15px;
+}
+
+.buttons {
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  margin-top: 20px;
+}
+
+.see-vd {
+  border: 0;
+  background: #fff;
+}
+.see-vd .bg-vd {
+  background-image: url("image/img3.jpg");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  position: relative;
+}
+.see-vd .play-vd {
+  position: absolute;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  right: -20px;
+  transform: translate(-20%, 50%);
+}
+.see-vd .play-vd i {
+  position: absolute;
+  top: 5px;
+  left: 8px;
+  color: red;
+}
+.see-vd span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.desc-button .title {
+  color: rgba(172, 166, 166, 0.6);
+  font-size: 15px;
+}
+.desc-button .ch-button button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFDE21;
+  border: 2px solid #FFDE21;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.desc-button .ch-button button:hover {
+  background: #fff;
+}
+.desc-button .second {
+  margin-left: 10px;
+}
+
+.destinations .title {
+  color: rgba(172, 166, 166, 0.6);
+  font-size: 14px;
+  width: 60%;
+}
+
+.destinations .gallerie .images {
+  width: 24%;
+  height: 350px;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  overflow: hidden;
+  cursor: pointer;
+  top: 25px;
+}
+.destinations .gallerie .images img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  transition: 0.5s;
+}
+
+.destinations .gallerie .small-desc {
+  transform: translateY(350px);
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: 0.5s;
+}
+.destinations .gallerie .small-desc h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.destinations .gallerie .small-desc p {
+  font-size: 14px;
+  color: rgba(172, 166, 166, 0.6);
+}
+.destinations .gallerie .images:hover .small-desc {
+  transform: translateY(-120px);
+}
+.destinations .gallerie .images:hover img {
+  transform: translateY(-120px);
+}/*# sourceMappingURL=style.css.map */

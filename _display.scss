@@ -1,0 +1,41 @@
+%df{
+    display: flex;
+
+    justify-content: center;
+}
+%dfc{
+    display:flex;
+    flex-direction: column;
+}
+%dfa{
+    display: flex;
+    align-items: center;
+   
+}
+%dfb{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+%dff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+%dfe{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+%d{
+    display:flex;
+    justify-content: space-between;
+}
+%dd{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
