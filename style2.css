@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.trading img {
+  width: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+ul, nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  padding: 20px 7%;
+}
+
+.logo img {
+  width: 140px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 10px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 30px;
+}
+ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.btn {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.btn a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.container {
+  padding: 0 7%;
+}
+.container h1 {
+  padding-top: 22%;
+  font-size: 4vw;
+  color: #fff;
+  text-align: center;
+}
+
+.search-bar {
+  background-color: #fff;
+  width: 70%;
+  border-radius: 50px;
+  padding: 6px 10px 6px 30px;
+  margin: 30px auto;
+}
+.search-bar form label {
+  font-weight: 500;
+}
+.search-bar form input {
+  border: 0;
+  outline: none;
+  display: block;
+}
+.search-bar form .loc {
+  flex: 1;
+}
+.search-bar form button {
+  background-color: rgb(158, 50, 86);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+}
+.search-bar form button img {
+  top: 5px;
+}
+
+.sub-title {
+  color: rgb(72, 70, 70);
+  margin: 20px 0 50px;
+  font-size: 30px;
+}
+
+.exclusive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+.exclusive img {
+  width: 100%;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.exclusive div {
+  position: relative;
+}
+.exclusive div span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  color: #fff;
+}
+
+.trading {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.trading p {
+  font-weight: 500;
+}/*# sourceMappingURL=style2.css.map */
